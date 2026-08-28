@@ -6,33 +6,52 @@ import {
   Linkedin,
   Twitter,
   Download,
+  Instagram,
 } from "lucide-react";
 import { AnimatedBorderButton } from "./ui/AnimatedBorderButton";
 
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "Node.js",
-  "GraphQL",
-  "PostgreSQL",
-  "MongoDB",
-  "Redis",
-  "Docker",
+  "Anaconda",
   "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
+  "C",
+  "C++",
+  "FastAPI",
   "Git",
   "GitHub Actions",
+  "GitHub Pages",
+  "Groq",
+  "Hugging Face",
+  "Java",
+  "JavaScript",
+  "Keras",
+  "Kotlin",
+  "Matplotlib",
+  "Ngrok",
+  "Node.js",
+  "Node.js",
+  "NumPy",
+  "OpenAI API",
+  "OpenCV",
+  "pandas",
+  "PostgreSQL",
+  "Python",
+  "PyTorch",
+  "React",
+  "scikit-learn",
+  "Seaborn",
+  "Tailwind CSS",
+  "TensorFlow",
+  "Twilio",
+  "Ultralytics",
+  "Vercel",
 ];
 
 export const Hero = () => {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center overflow-hidden"
+    >
       {/* Content */}
       <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -41,46 +60,60 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Software Engineer • ML Specialist
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-primary glow-text">digital</span>
+                Finding the{" "}
+                <span className="text-primary glow-text">signal</span>
                 <br />
-                experiences with
-                <br />
+                in the{" "}
                 <span className="font-serif italic font-normal text-white">
-                  precision.
+                  noise.
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Pedro Machado — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+                Hi, I'm Jesse Wang, a CS & Math student specializing in applied
+                machine learning and computer vision. I build systems that turn
+                raw data into real-time decisions, from cancer detection models
+                to autonomous robotics pipelines. Currently exploring how my
+                skill set applies to quantitative finance.
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
-              <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
-              </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="#contact">
+                <Button size="lg">
+                  Contact Me <ArrowRight className="w-5 h-5" />
+                </Button>
+              </a>
+              <a href="/resume.pdf" download="JWResume.pdf">
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Download CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-sm text-muted-foreground">Follow me: </span>
+              <span className="text-sm text-muted-foreground">
+                Connect with me:{" "}
+              </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Twitter, href: "#" },
+                { icon: Github, href: "https://github.com/JesseW2158" },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/jesse-h-wang/",
+                },
+                {
+                  icon: Instagram,
+                  href: "https://www.instagram.com/jesse.w215/",
+                },
               ].map((social, idx) => (
                 <a
                   key={idx}
@@ -120,9 +153,14 @@ export const Hero = () => {
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-primary">5+</div>
+                  <div className="text-2xl font-bold text-primary">
+                    {Math.round(
+                      (new Date("2028-5-19") - new Date()) /
+                        (1000 * 60 * 60 * 24),
+                    )}
+                  </div>
                   <div className="text-xs text-muted-foreground">
-                    Years Exp.
+                    days until grad.
                   </div>
                 </div>
               </div>

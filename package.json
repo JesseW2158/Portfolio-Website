@@ -1,5 +1,6 @@
 {
-  "name": "beautiful-portfolio",
+  "name": "Jesse's-portfolio",
+  "description": "A portfolio website for Jesse",
   "private": true,
   "version": "0.0.0",
   "type": "module",
