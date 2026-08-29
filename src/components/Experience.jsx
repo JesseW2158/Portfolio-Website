@@ -1,38 +1,65 @@
 const experiences = [
   {
-    period: "2022 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Tech Innovators Inc.",
+    period: "2027",
+    role: "Software Engineer Intern",
+    company: "Amazon",
     description:
-      "Leading frontend architecture for a suite of fintech products. Implemented micro-frontend architecture, reduced bundle size by 40%, and mentored a team of 5 developers.",
-    technologies: ["React", "TypeScript", "Next.js", "GraphQL"],
+      "I will be joining Amazon as a Software Engineer Intern in 2027.",
+    technologies: [],
+    current: false,
+  },
+  {
+    period: "2025 - Present",
+    role: "AI Researcher",
+    company: "Columbia University",
+    description:
+      "Working with Professor Adam Lin at Columbia University, I am optimizing a Clear Cell Renal Cell Carcinoma assessment model by replacing task-specific encoders with Google's CT Foundation Model to address critical performance gaps in the MMIST-ccRCC benchmark.",
+    technologies: ["Python", "pandas", "NumPy", "PyTorch", "Seaborn"],
     current: true,
   },
   {
-    period: "2020 — 2022",
-    role: "Frontend Engineer",
-    company: "Digital Solutions Co.",
+    period: "2024 - 2026",
+    role: "AI Researcher",
+    company: "University of Connecticut",
     description:
-      "Built and maintained multiple React applications for enterprise clients. Introduced automated testing practices that improved code coverage to 85%.",
-    technologies: ["React", "Redux", "Jest", "Cypress"],
+      "I created a machine learning pipeline for automated brain tumor segmentation and progression prediction using VQGAN mask tokenization and fine-tuned Meta AI's Segment Anything Model 2 to achieve a 0.5 mean IoU score.",
+    technologies: ["Python", "pandas", "NumPy", "Matplotlib", "OpenCV", "TensorFlow"],
     current: false,
   },
   {
-    period: "2019 — 2020",
-    role: "Junior Developer",
-    company: "StartUp Labs",
+    period: "2025 - 2026",
+    role: "Data & Programming Lead",
+    company: "Glastonbury High School Rocketry Club",
     description:
-      "Contributed to the development of a SaaS platform from MVP to production. Collaborated with designers to implement pixel-perfect UI components.",
-    technologies: ["React", "Node.js", "MongoDB", "AWS"],
+      "I ran flight path simulations, doubled my sub-team's membership through interactive onboarding, created a wiki chatbot and a reinforcement learning model for 3D physics flight testing, and programmed electronics while mentoring younger members.",
+    technologies: ["C", "C#", "Python", "pandas", "NumPy", "TensorFlow", "Seaborn"],
+    current: true,
+  },
+  {
+    period: "2025 — 2026",
+    role: "Programming & Electronics Captain",
+    company: "FIRST Robotics Competition - Team 2170",
+    description:
+      "I led and expanded FIRST Robotics Team 2170 from 28 to 63 students, taught Java development using GitHub Code Reviews, and raised over $6,000 through local business sponsorships.",
+    technologies: ["Java", "C++", "Git", "WPILib", "GitHub Actions"],
     current: false,
   },
   {
-    period: "2018 — 2019",
-    role: "Freelance Developer",
-    company: "Self-Employed",
+    period: "2025",
+    role: "Scholar",
+    company: "MIT Introduction to Technology, Engineering, and Science (MITES) Semester Program",
     description:
-      "Delivered custom web solutions for small businesses and startups. Built 15+ websites and applications, handling everything from design to deployment.",
-    technologies: ["JavaScript", "PHP", "WordPress", "MySQL"],
+      "I was awarded the Best of MITES award for my writing on the current limitations of AI and the MITES Semester Achievement award for my work on PulseLine, a 24/7 online and on-call agentic AI medical assistant.",
+    technologies: ["Python", "OpenAI API", "Twilio", "Ngrok", "FastAPI", "PostgreSQL", "Groq"],
+    current: false,
+  },
+  {
+    period: "2023 — 2025",
+    role: "Vision & Scouting Lead",
+    company: "FIRST Robotics Competition - Team 2170",
+    description:
+      "I created and optimized an edge-accelerated computer vision pipeline for real-time object detection and tracking as well as overhauled our scouting system to improve data collection and analysis for our robotics team.",
+    technologies: ["Python", "Juypter Notebooks", "Ultralytics", "JavaScript", "Sckit-learn"],
     current: false,
   },
 ];
@@ -96,11 +123,10 @@ export const Experience = () => {
 
                 {/* Content */}
                 <div
-                  className={`pl-8 md:pl-0 ${
-                    idx % 2 === 0
-                      ? "md:pr-16 md:text-right"
-                      : "md:col-start-2 md:pl-16"
-                  }`}
+                  className={`pl-8 md:pl-0 ${idx % 2 === 0
+                    ? "md:pr-16"
+                    : "md:col-start-2 md:pl-16"
+                    }`}
                 >
                   <div
                     className={`glass p-6 rounded-2xl border border-primary/30 hover:border-primary/50 transition-all duration-500`}
@@ -114,9 +140,8 @@ export const Experience = () => {
                       {exp.description}
                     </p>
                     <div
-                      className={`flex flex-wrap gap-2 mt-4 ${
-                        idx % 2 === 0 ? "md:justify-end" : ""
-                      }`}
+                      className={`flex flex-wrap gap-2 mt-4 ${idx % 2 === 0 ? "md:justify-end" : ""
+                        }`}
                     >
                       {exp.technologies.map((tech, techIdx) => (
                         <span

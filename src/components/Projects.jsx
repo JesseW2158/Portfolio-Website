@@ -1,34 +1,31 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Chess Engine",
+    description:
+      "A desktop Java chess game with a JavaFX GUI. Play against a built-in AI that searches with negamax alpha-beta, iterative deepening, and a transposition table — full rules, four difficulty levels, save/load, undo, and an editor mode for setting up custom positions.",
+    image: "/ChessEngine.png",
+    tags: ["JavaFX", "DSA", "Game AI"],
+    githubUrl: "https://github.com/JesseW2158/Chess",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
-    description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "PulseLine",
+    description: "A voice + web AI assistant for medical offices, built with FastAPI, Twilio, and OpenAI's Realtime API. Handles routine patient requests over the phone or online like scheduling appointments and refilling prescriptions. Backed by a PostgreSQL patient database, with real-time voice transcription driving the call-in agent.",
+    image: "/PulseLine.png",
+    tags: ["Agentic AI", "PostgreSQL", "FastAPI"],
+    githubUrl: "https://github.com/PulseLine-Agent/PulseLine",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Particle Simulation",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "A Java + LWJGL (OpenGL/GLFW) 3D particle visualizer that spawns a randomized cloud of proton / neutron / electron particles inside a cube and renders them as shader-based sphere impostors - solid bodies for protons/neutrons, a soft glow halo for electrons - with free camera movement.",
+    image: "/ParticleSimulation.png",
+    tags: ["OpenGL", "LWJGL", "Optimization"],
+    githubUrl: "https://github.com/JesseW2158/Particle-Simulation",
   },
 ];
 
@@ -76,13 +73,6 @@ export const Projects = () => {
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
                       href={project.githubUrl}
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
@@ -100,12 +90,12 @@ export const Projects = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/JesseW2158"
           >
-            Check My Github <ArrowRight size={16} />
+            Check out my GitHub <ArrowRight size={16} />
           </a>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 };

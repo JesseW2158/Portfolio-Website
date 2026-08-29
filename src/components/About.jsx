@@ -5,24 +5,25 @@ const highlights = [
     icon: Code2,
     title: "Clean Code",
     description:
-      "Writing maintainable, scalable code that stands the test of time.",
+      "Writing clean, maintainable code that can stand the test of time.",
   },
   {
     icon: Rocket,
     title: "Performance",
     description:
-      "Optimizing for speed and delivering lightning-fast user experiences.",
+      "Always striving to optimize and deliver the best user experiences.",
   },
   {
     icon: Users,
     title: "Collaboration",
-    description: "Working closely with teams to bring ideas to life.",
+    description: 
+      "Working closely with others to bring our ideas to life.",
   },
   {
     icon: Lightbulb,
     title: "Innovation",
     description:
-      "Staying ahead with the latest technologies and best practices.",
+      "Building solutions that push the boundaries of what's possible.",
   },
 ];
 
@@ -40,39 +41,44 @@ export const About = () => {
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-secondary-foreground">
-              Building the future,
+              Building the future
+              <br />
               <span className="font-serif italic font-normal text-white">
                 {" "}
-                one component at a time.
+                one model at a time.
               </span>
             </h2>
 
             <div className="space-y-4 text-muted-foreground animate-fade-in animation-delay-200">
               <p>
-                I'm a passionate software engineer with over 5 years of
-                experience crafting digital products that make a difference. My
-                journey started with a curiosity for how things work on the web,
-                and it has evolved into a deep expertise in modern frontend
-                technologies.
+                I'm an incoming Computer Science and Mathematics double major at UMass Amherst,
+                and a first-generation college student who's spent the last few years building
+                things that matter — from AI models that catch cancer earlier to computer vision
+                systems that let robots see. What ties it all together isn't a specific field,
+                it's a love of solving hard problems, especially the ones where the answer isn't
+                clean.
               </p>
               <p>
-                I specialize in React, Next.js, and TypeScript, building
-                everything from sleek landing pages to complex enterprise
-                applications. My approach combines technical excellence with a
-                keen eye for design and user experience.
+                That's what's pulling me toward quantitative finance. Markets are just uncertainty
+                wearing a different costume than the one I've spent years modeling in medical imaging
+                and robotics — noisy data, incomplete information, and a reward for anyone who can
+                find signal in it. Whether I was fine-tuning a segmentation model on brain MRI scans
+                at UConn or optimizing a CT foundation model for cancer assessment at Columbia, the
+                part I've always loved most is the same: turning ambiguity into a prediction you can
+                actually trust.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                I'm heading into UMass wanting the same thing I've always wanted: harder problems,
+                better tools to solve them with, and enough curiosity to follow wherever the signal
+                leads. Whether that ends up being a hospital, a robot, or a trading floor, you'll always
+                find me looking for the next big challenge.
               </p>
             </div>
 
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away."
+                <br /> — Antoine de Saint-Exupéry
               </p>
             </div>
           </div>
