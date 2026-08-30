@@ -16,7 +16,7 @@ const highlights = [
   {
     icon: Users,
     title: "Collaboration",
-    description: 
+    description:
       "Working closely with others to bring our ideas to life.",
   },
   {
@@ -53,7 +53,7 @@ export const About = () => {
               <p>
                 I'm an incoming Computer Science and Mathematics double major at UMass Amherst,
                 and a first-generation college student who's spent the last few years building
-                things that matter — from AI models that catch cancer earlier to computer vision
+                things that matter, from AI models that catch cancer earlier to computer vision
                 systems that let robots see. What ties it all together isn't a specific field,
                 it's a love of solving hard problems, especially the ones where the answer isn't
                 clean.
@@ -61,11 +61,11 @@ export const About = () => {
               <p>
                 That's what's pulling me toward quantitative finance. Markets are just uncertainty
                 wearing a different costume than the one I've spent years modeling in medical imaging
-                and robotics — noisy data, incomplete information, and a reward for anyone who can
-                find signal in it. Whether I was fine-tuning a segmentation model on brain MRI scans
-                at UConn or optimizing a CT foundation model for cancer assessment at Columbia, the
-                part I've always loved most is the same: turning ambiguity into a prediction you can
-                actually trust.
+                and robotics. The same principles apply: noisy data, incomplete information, and a
+                reward for anyone who can find signal in it. Whether I was fine-tuning a segmentation
+                model on brain MRI scans at UConn or optimizing a CT foundation model for cancer
+                assessment at Columbia, the part I've always loved most is the same: turning ambiguity
+                into a prediction you can actually trust.
               </p>
               <p>
                 I'm heading into UMass wanting the same thing I've always wanted: harder problems,
@@ -78,7 +78,7 @@ export const About = () => {
             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
               <p className="text-lg font-medium italic text-foreground">
                 "Perfection is achieved not when there is nothing more to add, but rather when there is nothing more to take away."
-                <br /> — Antoine de Saint-Exupéry
+                <br /> - Antoine de Saint-Exupéry
               </p>
             </div>
           </div>

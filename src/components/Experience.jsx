@@ -36,7 +36,7 @@ const experiences = [
     current: true,
   },
   {
-    period: "2025 — 2026",
+    period: "2025 - 2026",
     role: "Programming & Electronics Captain",
     company: "FIRST Robotics Competition - Team 2170",
     description:
@@ -54,7 +54,7 @@ const experiences = [
     current: false,
   },
   {
-    period: "2023 — 2025",
+    period: "2023 - 2025",
     role: "Vision & Scouting Lead",
     company: "FIRST Robotics Competition - Team 2170",
     description:

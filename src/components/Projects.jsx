@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Chess Engine",
     description:
-      "A desktop Java chess game with a JavaFX GUI. Play against a built-in AI that searches with negamax alpha-beta, iterative deepening, and a transposition table — full rules, four difficulty levels, save/load, undo, and an editor mode for setting up custom positions.",
+      "A desktop Java chess game with a JavaFX GUI. Play against a built-in AI that searches with negamax alpha-beta, iterative deepening, and a transposition table with full rules, four difficulty levels, save/load, undo, and an editor mode for setting up custom positions.",
     image: "/ChessEngine.png",
     tags: ["JavaFX", "DSA", "Game AI"],
     githubUrl: "https://github.com/JesseW2158/Chess",
