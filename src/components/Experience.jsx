@@ -98,7 +98,7 @@ export const Experience = () => {
            animate-fade-in animation-delay-200"
           >
             A timeline of my professional growth, from curious beginner to
-            senior engineer leading teams and building products at scale.
+            incoming software engineer intern at a leading tech company.
           </p>
         </div>
 
